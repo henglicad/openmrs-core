@@ -58,6 +58,10 @@ mvn -version
 
 which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
 
+##### Using Maven SonarScanner plugin to scan the code
+mvn verify sonar:sonar -Dmaven.test.skip=true -Dsonar.login=ac5fb37c7f708fb21d8251ef81e5f91876a3a84f
+(Replace the token with your own token. You can keep the test runs if you want, which will take longer time.)
+
 #### Git
 
 Install the version control tool [git](https://git-scm.com/) and clone this repository with
